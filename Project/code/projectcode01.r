@@ -17,7 +17,8 @@ EelPlot <- ggplot(eel_data, aes(x = decade, y = measurement, fill = Measurement_
   geom_boxplot() +
   scale_fill_manual(values = c("lightblue", "lightpink"), labels = c("Length (mm)", "Weight (g)")) +
   labs(x = "Decade", y = "Measurement") +
-  ggtitle("Silver Eel Change in Weight and Length by Decade")
+  guides(fill = guide_legend(title = "Measurement Type")) +
+  ggtitle("European Silver Eel Change in Weight and Length by Decade")
 EelPlot + theme(panel.background = element_rect(fill = "white"),
                 panel.grid.major.x = element_blank(),  
                 panel.grid.minor.x = element_blank(),  
