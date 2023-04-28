@@ -26,5 +26,5 @@ same_door <- sum(prize =="1")/n
 diff_door <- sum(prize == closed_door)/n
 win_frequency <- c(same_door, diff_door)
 barplot(win_frequency, names.arg = c("Same Door", "Different Door"), ylab ="Frequency of Wins (10,000 Runs)", ylim = c(0, 0.8), main = "Chance of Winning the Grand Prize", col = "lightpink")
-u <- "https://pyxis.nymag.com/v1/imgs/2e7/5d7/73e020f56c4a86221823bc32113b4316d2-25-ben-affleck-sad-smoke.w710.jpg"
-meme(u, "", "Me after taking one of Dr. Mitchell's exams")
+t <- "https://listverse.com/wp-content/uploads/2009/01/obama-smoking-tm.jpg"
+meme(t, "", "Me looking at Dr. Mitchell after a rough exam", size = 1.5)
